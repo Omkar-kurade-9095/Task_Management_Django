@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}"><h1>TASK MANAGEMENT</h1></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}"><h3>Home</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'addtask' %}"><h3>AddTask</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'history' %}"><h3>History</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="" ><h3>Completed</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href=""><h3>About</h3></a>
+          </li>
+          
+        </ul>
+       
+      </div>
+  </nav>

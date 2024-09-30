@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="details" >
+    
+    <h3>Id : {{a.id}}</h3>
+    <h3>title : {{a.title}}</h3>
+    <h3>description : {{a.desc}}</h3>
+    <h1>Are you sure you want to delete task?</h1>
+
+
+    <form action="" method="POST" >
+        {% csrf_token %}
+        <input type="submit" value="CONFIRM" >
+    </form> 
+    
+    <h1><a href="{% url 'home' %}">Cancel</a></h1>
+
+    
+</div>
+
+
+
+{% endblock content %}

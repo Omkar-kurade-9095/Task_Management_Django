@@ -1,0 +1,26 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+<h2 class="text-center my-3">All Task </h2>
+<div class="container d-flex gap-3" >
+
+        {% for i in a %}
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body text-dark">
+                  <h2>{{i.id}}</h2>
+                  <h2>{{i.title}}</h2>
+                  <h2>{{i.desc}}</h2>  
+                  <a class="btn btn-warning" href="{% url 'edit' i.id %}">Edit</a>
+                  <a class="btn btn-primary" href="{% url 'details' i.id %}">Detail</a>
+                  <a class="btn btn-danger" href="{% url 'delete' i.id %}">Delete</a>
+                  <a class="btn btn-secondary my-1" href="">Task Completed</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+</div>
+
+{% endblock content %}
